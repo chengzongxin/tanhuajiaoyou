@@ -30,10 +30,10 @@ function HomeScreen({navigation}: HomeScreenProps) {
   );
 }
 
-function DetailsScreen() {
+function DetailsScreen({navigation}: HomeScreenProps) {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Details Screen</Text>
+      <Text onPress={() => navigation.goBack()}>Details Screen Click Goback!</Text>
     </View>
   );
 }
