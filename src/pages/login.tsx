@@ -6,7 +6,8 @@ interface LoginProps {
 }
  
 const Login: FunctionComponent<LoginProps> = () => {
-  return <Text>Login</Text>;
+  return <Text onPress={()=>{console.log(123);
+  }}>Login 123</Text>;
   
 }
  
