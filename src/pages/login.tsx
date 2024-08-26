@@ -1,14 +1,20 @@
-import { FunctionComponent } from "react";
-import { Text } from "react-native";
+import React, { FunctionComponent } from "react";
+import { Image, StatusBar, Text, View } from "react-native";
 
 interface LoginProps {
   
 }
  
 const Login: FunctionComponent<LoginProps> = () => {
-  return <Text onPress={()=>{console.log(123);
-  }}>Login 123</Text>;
-  
+  return (
+    <View>
+      <StatusBar backgroundColor={'transparent'} translucent={true}></StatusBar>
+      <Image
+        style={{width: '100%', height: 'auto', aspectRatio:1.5}}
+        source={require('../res/profileBackground.jpg')}
+      />
+    </View>
+  );
 }
- 
+
 export default Login;
